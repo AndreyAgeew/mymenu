@@ -10,4 +10,4 @@ class MenuItemAdmin(admin.ModelAdmin):
     list_display = ['name', 'url', 'parent']
     search_fields = ['name', 'url']
 
-    filter_horizontal = ('parent',)  # Используйте filter_horizontal для выбора родительских элементов.
+    list_filter = ['parent']
